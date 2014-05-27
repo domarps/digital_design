@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/rishav/Logic/FreeRunningShiftRegister/freeRunner.ncd
+OUTFILE=/home/rishav/Logic/FreeRunningShiftRegister/freeRunner.bit
+FAMILY=Spartan6
+PART=xc6slx45-2csg324
+WORKINGDIR=/home/rishav/Logic/FreeRunningShiftRegister
+LICENSE=WebPack
+USER_INFO=210852430_0_0_929

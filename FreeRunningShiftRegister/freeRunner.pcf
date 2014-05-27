@@ -1,0 +1,11 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon May 26 18:07:49 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "en" LOCATE = SITE "P3" LEVEL 1;
+COMP "op" LOCATE = SITE "U18" LEVEL 1;
+COMP "ip1" LOCATE = SITE "D14" LEVEL 1;
+COMP "ip2" LOCATE = SITE "C14" LEVEL 1;
+SCHEMATIC END;
+

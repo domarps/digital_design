@@ -1,0 +1,7 @@
+#4 slide switches
+NET "a<0>" LOC =  "F12";  #switch 0
+NET "a<1>" LOC =  "F12";  #switch 1
+NET "b<0>" LOC =  "F12";  #switch 2
+NET "b<1>" LOC =  "F12";  #switch 3
+#LED
+NET "aeqb"  LOC =  "K12";  #led 0
