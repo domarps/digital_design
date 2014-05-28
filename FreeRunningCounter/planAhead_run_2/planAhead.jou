@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Tue May 27 19:36:43 2014
+# Process ID: 10708
+# Log file: /home/rishav/logic/code_repository/FreeRunningCounter/planAhead_run_2/planAhead.log
+# Journal file: /home/rishav/logic/code_repository/FreeRunningCounter/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/rishav/logic/code_repository/FreeRunningCounter/pa.fromNetlist.tcl
+set_property package_pin "" [get_ports [list  {q[3]}]]
+set_property package_pin "" [get_ports [list  {q[0]}]]
+startgroup
+set_property package_pin M1 [get_ports {q[0]}]
+endgroup

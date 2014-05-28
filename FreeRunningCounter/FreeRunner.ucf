@@ -1,0 +1,9 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "q[0]" LOC = U18;
+NET "q[1]" LOC = M14;
+NET "q[2]" LOC = C14;
+NET "q[3]" LOC = P15;
+NET "clk" LOC = F5;
+NET "reset" LOC = T15;

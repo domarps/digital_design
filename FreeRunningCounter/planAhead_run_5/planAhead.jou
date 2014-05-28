@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Tue May 27 19:45:20 2014
+# Process ID: 11465
+# Log file: /home/rishav/logic/code_repository/FreeRunningCounter/planAhead_run_5/planAhead.log
+# Journal file: /home/rishav/logic/code_repository/FreeRunningCounter/planAhead_run_5/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/rishav/logic/code_repository/FreeRunningCounter/pa.fromNetlist.tcl
+startgroup
+set_property package_pin U18 [get_ports {q[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  {q[2]}]]
+set_property package_pin "" [get_ports [list  {q[3]}]]
+startgroup
+set_property package_pin U18 [get_ports {q[0]}]
+endgroup
+startgroup
+set_property package_pin M14 [get_ports {q[1]}]
+endgroup
+startgroup
+set_property package_pin C14 [get_ports {q[2]}]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports {q[3]}]
+endgroup
+set_property is_loc_fixed false [get_ports [list  {q[3]}]]
+set_property is_loc_fixed true [get_ports [list  {q[3]}]]
+startgroup
+set_property package_pin F5 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin T15 [get_ports reset]
+endgroup
+save_constraints
