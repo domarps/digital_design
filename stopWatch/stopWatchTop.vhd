@@ -59,10 +59,11 @@ begin
 			
 		-- combinotorial logic to determine the next state
 		
-		next_value <= current_value + 1 when counter = "101000000000000000000000" else -- 100MHz clock takes this many Clock pulses for 1 ms.
+		next_value <= current_value + 1 when counter = "101000000000000000000000" else -- 100MHz clock takes these many Clock pulses for 1 ms.
 						   "000" when clr = '1' else
 						    current_value;
 		
+		--counter <= "000000000000000000000000" when clr = '1' ;
 		-- output logic
 		d <= STD_LOGIC_VECTOR( current_value );
 		
