@@ -72,9 +72,9 @@ begin
 													when "01" =>  -- Write
 																	if(overflow = '0') then
 																			 fifo (conv_integer(wr_ptr)) <= w_data ;
-																			if (underflow = '1') then underflow <= '0'; end if;
 																			wr_ptr <= wr_ptr + 1;
-																			 if ( wr_ptr = rd_ptr ) then
+																			if (underflow = '1') then underflow <= '0'; end if;
+																			 if ( wr_ptr + 1 = rd_ptr ) then
 																								overflow <= '1';
 																				end if;				
 																	 end if; 
@@ -82,11 +82,12 @@ begin
 													when "10" => --Read
 																	if (underflow = '0') then
 																			r_data <= fifo (conv_integer(rd_ptr));
-																			if (overflow = '1' ) then overflow <= '0'; end if ;
-																			rd_ptr <= rd_ptr + 1;
-																			if (rd_ptr + 1 > wr_ptr or  rd_ptr +1 = wr_ptr ) then
+																		rd_ptr <= rd_ptr + 1;
+																		if (overflow = '1' ) then overflow <= '0'; end if ;
+																					
+																		if ( rd_ptr +2 = wr_ptr ) then
 																					underflow <= '1';
-																			end if;
+																		end if;
 																	end if;	
 														
 													when others => --no-op
