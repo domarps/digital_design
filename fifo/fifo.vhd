@@ -62,7 +62,7 @@ begin
 								overflow <= '0';
 								underflow <= '1';
 								 wr_ptr <= "000";
-								 rd_ptr <= "000";
+								 rd_ptr <= "111";
 								--fifo  <= (others => (others =>'0' ));
 					else		
 								if (clk'event and clk ='1')	then
@@ -72,8 +72,9 @@ begin
 													when "01" =>  -- Write
 																	if(overflow = '0') then
 																			 fifo (conv_integer(wr_ptr)) <= w_data ;
+																			if (underflow = '1') then underflow <= '0'; end if;
 																			wr_ptr <= wr_ptr + 1;
-																			 if ( wr_ptr = rd_ptr) then
+																			 if ( wr_ptr = rd_ptr ) then
 																								overflow <= '1';
 																				end if;				
 																	 end if; 
@@ -81,8 +82,9 @@ begin
 													when "10" => --Read
 																	if (underflow = '0') then
 																			r_data <= fifo (conv_integer(rd_ptr));
+																			if (overflow = '1' ) then overflow <= '0'; end if ;
 																			rd_ptr <= rd_ptr + 1;
-																			if (rd_ptr = wr_ptr) then
+																			if (rd_ptr + 1 > wr_ptr or  rd_ptr +1 = wr_ptr ) then
 																					underflow <= '1';
 																			end if;
 																	end if;	
