@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="WeightedRoundRobinArbiter.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Arbiter.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Arbiter.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Arbiter.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Arbiter.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Arbiter.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Arbiter.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Arbiter.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Arbiter.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Arbiter_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Arbiter_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Arbiter_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Arbiter_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Arbiter_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Arbiter_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/Arbiter_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/Arbiter_synthesis.vhd"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1403266033" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1403266033">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403266637" xil_pn:in_ck="-8236017122880740345" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1403266637">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Arbiter.vhd"/>
+      <outfile xil_pn:name="tb_Arbiter.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1403266114" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6111764635104778924" xil_pn:start_ts="1403266114">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403266114" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1218806871309400278" xil_pn:start_ts="1403266114">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403266033" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-283307336439253669" xil_pn:start_ts="1403266033">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403266637" xil_pn:in_ck="-8236017122880740345" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1403266637">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Arbiter.vhd"/>
+      <outfile xil_pn:name="tb_Arbiter.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1403266640" xil_pn:in_ck="-8236017122880740345" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8304511946598085397" xil_pn:start_ts="1403266637">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Arbiter_beh.prj"/>
+      <outfile xil_pn:name="Arbiter_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1403266640" xil_pn:in_ck="7011926288851815288" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2308931887907574312" xil_pn:start_ts="1403266640">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Arbiter_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1403243665" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1403243665">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403243665" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8510635002140129942" xil_pn:start_ts="1403243665">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403243665" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-283307336439253669" xil_pn:start_ts="1403243665">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403243665" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1403243665">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403243665" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="6111764635104778924" xil_pn:start_ts="1403243665">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403243665" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8977612015756273942" xil_pn:start_ts="1403243665">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403243665" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-4497771557777427803" xil_pn:start_ts="1403243665">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403264992" xil_pn:in_ck="104986000145051257" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1899787049185517876" xil_pn:start_ts="1403264984">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="Arbiter.lso"/>
+      <outfile xil_pn:name="Arbiter.ngc"/>
+      <outfile xil_pn:name="Arbiter.ngr"/>
+      <outfile xil_pn:name="Arbiter.prj"/>
+      <outfile xil_pn:name="Arbiter.stx"/>
+      <outfile xil_pn:name="Arbiter.syr"/>
+      <outfile xil_pn:name="Arbiter.xst"/>
+      <outfile xil_pn:name="Arbiter_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1403260204" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="480487084876652897" xil_pn:start_ts="1403260204">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1403265083" xil_pn:in_ck="104986000145042511" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="-3402357514701371346" xil_pn:start_ts="1403265082">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/synthesis/Arbiter_synthesis.nlf"/>
+      <outfile xil_pn:name="netgen/synthesis/Arbiter_synthesis.vhd"/>
+    </transform>
+  </transforms>
+
+</generated_project>

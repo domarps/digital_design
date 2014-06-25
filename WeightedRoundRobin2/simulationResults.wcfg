@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/rishav/logic/code_repository/WeightedRoundRobin2/tb_arbiter_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tb_arbiter" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/tb_arbiter/clk" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="label">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/req" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">req[3:0]</obj_property>
+      <obj_property name="ObjectShortName">req[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/counter_reg" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">counter_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_reg[3:0]</obj_property>
+      <obj_property name="label">counter_reg[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/counter_next" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter_next[3:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_next[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/ack" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ack[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ack[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/reqvalid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reqvalid</obj_property>
+      <obj_property name="ObjectShortName">reqvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/masterport" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">masterport[1:0]</obj_property>
+      <obj_property name="ObjectShortName">masterport[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/req" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">req[3:0]</obj_property>
+      <obj_property name="ObjectShortName">req[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/ack" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ack[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ack[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/reqvalid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reqvalid</obj_property>
+      <obj_property name="ObjectShortName">reqvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/masterport" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">masterport[1:0]</obj_property>
+      <obj_property name="ObjectShortName">masterport[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/masterport_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">masterport_reg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">masterport_reg[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/masterport_next" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">masterport_next[1:0]</obj_property>
+      <obj_property name="ObjectShortName">masterport_next[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/ackreg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ackreg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ackreg[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/acknext" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">acknext[3:0]</obj_property>
+      <obj_property name="ObjectShortName">acknext[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/reqvalidreg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reqvalidreg</obj_property>
+      <obj_property name="ObjectShortName">reqvalidreg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/reqvalidnext" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reqvalidnext</obj_property>
+      <obj_property name="ObjectShortName">reqvalidnext</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/weight0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">weight0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">weight0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/weight1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">weight1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">weight1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/weight2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">weight2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">weight2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arbiter/uut/weight3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">weight3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">weight3[3:0]</obj_property>
+   </wvobject>
+</wave_config>
