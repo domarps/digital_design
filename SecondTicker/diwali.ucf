@@ -1,0 +1,15 @@
+
+# PlanAhead Generated physical constraints 
+NET "clk" LOC = L15;
+NET "reset" LOC = F5;
+NET "led[0]" LOC = U18;
+NET "led[1]" LOC = M14;
+NET "led[2]" LOC = N14;
+NET "led[3]" LOC = L14;
+NET "led[4]" LOC = M13;
+NET "led[5]" LOC = D4;
+NET "led[6]" LOC = P16;
+NET "led[7]" LOC = N12;
+#Created by Constraints Editor (xc6slx4-csg225-3) - 2014/06/26
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 10 ns HIGH 50%;

@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Thu Jun 26 15:40:57 2014
+# Process ID: 7852
+# Log file: /home/rishav/logic/code_repository/SecondTicker/planAhead_run_1/planAhead.log
+# Journal file: /home/rishav/logic/code_repository/SecondTicker/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/rishav/logic/code_repository/SecondTicker/pa.fromNetlist.tcl
+set_property package_pin "" [get_ports [list  {led[7]}]]
+startgroup
+set_property package_pin U18 [get_ports {led[7]}]
+endgroup
+startgroup
+set_property package_pin L15 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin F5 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin M14 [get_ports {led[6]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {led[5]}]
+endgroup
+set_property package_pin "" [get_ports [list  {led[4]}]]
+set_property package_pin "" [get_ports [list  {led[7]}]]
+set_property package_pin "" [get_ports [list  {led[6]}]]
+set_property package_pin "" [get_ports [list  {led[5]}]]
+startgroup
+set_property package_pin U18 [get_ports {led[0]}]
+endgroup
+startgroup
+set_property package_pin M14 [get_ports {led[1]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {led[2]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {led[3]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {led[4]}]
+endgroup
+startgroup
+set_property package_pin D4 [get_ports {led[5]}]
+endgroup
+save_constraints
