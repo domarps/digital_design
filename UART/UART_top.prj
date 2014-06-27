@@ -1,0 +1,3 @@
+vhdl work "RxModule.vhd"
+vhdl work "BaudRateGenerator.vhd"
+vhdl work "UART_top.vhd"

@@ -1,0 +1,6 @@
+[Inputs]
+clk
+reset
+[Outputs]
+sampling_tick
+[BiDir]

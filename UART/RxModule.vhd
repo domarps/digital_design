@@ -48,6 +48,7 @@ type state_type is (idle, start, data, stop);
 signal state_reg, state_next : state_type;  
 signal s_reg, s_next : unsigned (3 downto 0);
 signal n_reg, n_next : unsigned (2 downto 0);
+
 signal b_reg, b_next : std_logic_vector (7 downto 0);
 
 begin	
@@ -67,13 +68,13 @@ begin
 		end process;	
 -- Next state logic
 
-	process (state_reg,s_reg,n_reg,s_tick, rx)
+	process (state_reg,s_reg,n_reg,s_tick, rx,b_reg)
 	begin
 		state_next <= state_reg;
 		s_next <= s_reg;
 		n_next <= n_reg;
 		b_next <= b_reg;
-		
+		rx_done_tick <= '0';
 		case state_reg is 
 				when idle =>
 						if (rx = '0') then
@@ -97,7 +98,7 @@ begin
 									 if s_reg = 15 then
 												s_next <= (others => '0');
 												b_next <= rx & b_reg(7 downto 1);
-													if (n_reg = (DBIT - 1 ) )then
+													if (n_reg = (DBIT - 1 ))then
 															state_next <= stop;
 													else
 															n_next <= n_reg + 1;

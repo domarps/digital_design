@@ -38,11 +38,12 @@ entity BaudRateGenerator is
 end BaudRateGenerator;
 
 architecture Behavioral of BaudRateGenerator is
-CONSTANT BAUD_RATE : integer := 9600;
-CONSTANT OVERSAMPLING_COUNT : integer := 16;
-CONSTANT CLK_FREQ : integer := 100000000;
+-- BAUD_RATE  := 9600;
+-- OVERSAMPLING_COUNT  := 16;
+-- CLK_FREQ  := 100000000;
 
-signal counter_reg, counter_next : std_logic_vector (9 downto 0);  --1010001011
+signal counter_reg, counter_next : std_logic_vector (9 downto 0):=  "1010001011";
+signal s_tick_reg,s_tick_next : std_logic;
 begin
 		     process(clk,reset)
 			  begin
@@ -53,7 +54,18 @@ begin
 							end if;
 			  end process;
 		     
-			  counter_next <= "1010001011" when counter_reg = "0000000000"
-													    else std_logic_vector( unsigned(counter_reg) - 1);
+			  
+			  process (counter_reg)
+			  begin
+								if (counter_reg = "0000000000") then
+											counter_next <= "1010001011";
+											
+								else
+											 counter_next <= std_logic_vector(unsigned (counter_reg )- 1) ;
+								end if;
+			  end process;
+			  
+				sampling_tick <= '1' when counter_reg = "0000000000" else '0';										 
+				
 end Behavioral;
 

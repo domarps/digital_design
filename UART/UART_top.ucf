@@ -1,0 +1,18 @@
+
+
+NET "reset" LOC = F5;
+NET "rx" LOC = A16;
+NET "dout[0]" LOC = U18;
+NET "dout[1]" LOC = M14;
+NET "dout[2]" LOC = N14;
+NET "dout[3]" LOC = L14;
+NET "dout[4]" LOC = M13;
+NET "dout[5]" LOC = D4;
+
+# PlanAhead Generated physical constraints 
+NET "dout[6]" LOC = P16;
+NET "dout[7]" LOC = N12;
+NET "clk" LOC = L15;
+#Created by Constraints Editor (xc6slx45-csg324-3) - 2014/06/27
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 100 MHz HIGH 50%;
