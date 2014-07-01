@@ -40,7 +40,8 @@ entity RxModule is
            rx : in  STD_LOGIC;
            s_tick : in  STD_LOGIC;
            rx_done_tick : out  STD_LOGIC;
-           dout : out  STD_LOGIC_VECTOR (7 downto 0));
+           dout : out  STD_LOGIC_VECTOR (7 downto 0);
+			  stage: out STD_LOGIC_VECTOR (4 downto 0));
 end RxModule;
 
 architecture Behavioral of RxModule is
@@ -59,6 +60,7 @@ begin
 					s_reg <= (others => '0');  -- counts the number of sampling ticks. Counts to 7 in START state,15 in DATA and 1 in STOP
 					n_reg <= (others => '0');   -- counts the number of data bits scanned in DATA state.
 					b_reg <= (others => '0');
+					--stage <= "00001";
 				elsif (clk'event and clk = '1') then
 					state_reg <= state_next;
 					s_reg <= s_next;
@@ -77,12 +79,14 @@ begin
 		rx_done_tick <= '0';
 		case state_reg is 
 				when idle =>
+						stage <= "00010";
 						if (rx = '0') then
 									state_next <= start;
 									s_next <= ( others => '0');
 						end if;
 
 				when start => 
+				stage <= "00100";
 								if (s_tick = '1') then
 									 if s_reg = 7 then
 												state_next <= data;
@@ -94,6 +98,7 @@ begin
 								end if ;
 
 				when data =>
+				stage <= "01000";
 								if (s_tick = '1') then
 									 if s_reg = 15 then
 												s_next <= (others => '0');
@@ -110,6 +115,7 @@ begin
 								end if ;
 								
 				when stop =>
+				stage <= "10000";
 						if (s_tick = '1') then
 									 if (s_reg = (SB_TICK - 1)) then
 												state_next <= idle;

@@ -7,6 +7,13 @@ NET "dout[1]" LOC = M14;
 NET "dout[2]" LOC = N14;
 NET "dout[3]" LOC = L14;
 NET "dout[4]" LOC = M13;
+
+#NET "stage[0]" LOC = U18;
+#NET "stage[1]" LOC = M14;
+#NET "stage[2]" LOC = N14;
+#NET "stage[3]" LOC = L14;
+#NET "stage[4]" LOC = M13;
+
 NET "dout[5]" LOC = D4;
 
 # PlanAhead Generated physical constraints 

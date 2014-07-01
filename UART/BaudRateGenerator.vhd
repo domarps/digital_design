@@ -40,9 +40,10 @@ end BaudRateGenerator;
 architecture Behavioral of BaudRateGenerator is
 -- BAUD_RATE  := 9600;
 -- OVERSAMPLING_COUNT  := 16;
--- CLK_FREQ  := 100000000;
+-- CLK_FREQ  := 100000000 hz;
 
-signal counter_reg, counter_next : std_logic_vector (9 downto 0):=  "1010001011";
+signal counter_reg: std_logic_vector (9 downto 0):=  "1010001011";
+signal counter_next : std_logic_vector (9 downto 0):=  "1010001010";
 signal s_tick_reg,s_tick_next : std_logic;
 begin
 		     process(clk,reset)
@@ -51,6 +52,7 @@ begin
 									counter_reg <= "1010001011";
 						   elsif (clk'event and clk = '1') then
 											counter_reg <= counter_next;
+											s_tick_reg <= s_tick_next;
 							end if;
 			  end process;
 		     
@@ -59,13 +61,14 @@ begin
 			  begin
 								if (counter_reg = "0000000000") then
 											counter_next <= "1010001011";
-											
+											s_tick_next <= '1';
 								else
 											 counter_next <= std_logic_vector(unsigned (counter_reg )- 1) ;
+											 s_tick_next <= '0';
 								end if;
 			  end process;
 			  
-				sampling_tick <= '1' when counter_reg = "0000000000" else '0';										 
+				sampling_tick <= s_tick_reg;					 
 				
 end Behavioral;
 

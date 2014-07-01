@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Jun 27 18:21:18 2014
+// Written by: Map P.20131013 on Tue Jul 01 12:31:57 2014
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -15,9 +15,11 @@ COMP "dout<7>" LOCATE = SITE "N12" LEVEL 1;
 COMP "rx" LOCATE = SITE "A16" LEVEL 1;
 COMP "reset" LOCATE = SITE "F5" LEVEL 1;
 TIMEGRP clk = BEL "Inst_RxModule/state_reg_FSM_FFd1" BEL
-        "Inst_RxModule/state_reg_FSM_FFd2" BEL "Inst_RxModule/s_reg_3" BEL
-        "Inst_RxModule/s_reg_2" BEL "Inst_RxModule/s_reg_1" BEL
-        "Inst_RxModule/s_reg_0" BEL "Inst_BaudRateGenerator/counter_reg_9" BEL
+        "Inst_RxModule/state_reg_FSM_FFd2" BEL "Inst_RxModule/n_reg_2" BEL
+        "Inst_RxModule/n_reg_1" BEL "Inst_RxModule/n_reg_0" BEL
+        "Inst_RxModule/s_reg_3" BEL "Inst_RxModule/s_reg_2" BEL
+        "Inst_RxModule/s_reg_1" BEL "Inst_RxModule/s_reg_0" BEL
+        "Inst_BaudRateGenerator/counter_reg_9" BEL
         "Inst_BaudRateGenerator/counter_reg_8" BEL
         "Inst_BaudRateGenerator/counter_reg_7" BEL
         "Inst_BaudRateGenerator/counter_reg_6" BEL
@@ -26,13 +28,12 @@ TIMEGRP clk = BEL "Inst_RxModule/state_reg_FSM_FFd1" BEL
         "Inst_BaudRateGenerator/counter_reg_3" BEL
         "Inst_BaudRateGenerator/counter_reg_2" BEL
         "Inst_BaudRateGenerator/counter_reg_1" BEL
-        "Inst_BaudRateGenerator/counter_reg_0" BEL "Inst_RxModule/b_reg_7" BEL
+        "Inst_BaudRateGenerator/counter_reg_0" BEL
+        "Inst_BaudRateGenerator/s_tick_reg" BEL "Inst_RxModule/b_reg_7" BEL
         "Inst_RxModule/b_reg_6" BEL "Inst_RxModule/b_reg_5" BEL
         "Inst_RxModule/b_reg_4" BEL "Inst_RxModule/b_reg_3" BEL
         "Inst_RxModule/b_reg_2" BEL "Inst_RxModule/b_reg_1" BEL
-        "Inst_RxModule/b_reg_0" BEL "Inst_RxModule/n_reg_2" BEL
-        "Inst_RxModule/n_reg_1" BEL "Inst_RxModule/n_reg_0" BEL
-        "clk_BUFGP/BUFG";
+        "Inst_RxModule/b_reg_0" BEL "clk_BUFGP/BUFG";
 TS_clk = PERIOD TIMEGRP "clk" 100 MHz HIGH 50%;
 SCHEMATIC END;
 

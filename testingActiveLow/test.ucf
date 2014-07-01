@@ -1,0 +1,4 @@
+
+
+NET "sw" LOC = T15;
+NET "led" LOC = U18;

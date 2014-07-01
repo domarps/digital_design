@@ -29,133 +29,19 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
 Timing constraint: TS_clk = PERIOD TIMEGRP "clk" 100 MHz HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 440 paths analyzed, 141 endpoints analyzed, 0 failing endpoints
+ 235 paths analyzed, 146 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   3.188ns.
+ Minimum period is   5.721ns.
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_RxModule/b_reg_3 (SLICE_X36Y66.D5), 8 paths
+Paths for end point Inst_RxModule/b_reg_0 (SLICE_X58Y39.A1), 4 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     6.812ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_BaudRateGenerator/counter_reg_9 (FF)
-  Destination:          Inst_RxModule/b_reg_3 (FF)
-  Requirement:          10.000ns
-  Data Path Delay:      3.145ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.008ns (0.243 - 0.251)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_BaudRateGenerator/counter_reg_9 to Inst_RxModule/b_reg_3
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X38Y74.CMUX    Tshcko                0.488   Inst_RxModule/s_reg<2>
-                                                       Inst_BaudRateGenerator/counter_reg_9
-    SLICE_X37Y66.D4      net (fanout=22)       1.240   Inst_BaudRateGenerator/counter_reg<9>
-    SLICE_X37Y66.D       Tilo                  0.259   N61
-                                                       Inst_RxModule/Mmux_s_next411_SW9_G
-    SLICE_X36Y66.C2      net (fanout=1)        0.408   N61
-    SLICE_X36Y66.C       Tilo                  0.205   Inst_RxModule/b_reg<3>
-                                                       Inst_RxModule/Mmux_s_next411_SW91
-    SLICE_X36Y66.D5      net (fanout=1)        0.204   N34
-    SLICE_X36Y66.CLK     Tas                   0.341   Inst_RxModule/b_reg<3>
-                                                       Inst_RxModule/b_reg_3_rstpot
-                                                       Inst_RxModule/b_reg_3
-    -------------------------------------------------  ---------------------------
-    Total                                      3.145ns (1.293ns logic, 1.852ns route)
-                                                       (41.1% logic, 58.9% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     7.170ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_BaudRateGenerator/counter_reg_7 (FF)
-  Destination:          Inst_RxModule/b_reg_3 (FF)
-  Requirement:          10.000ns
-  Data Path Delay:      2.792ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.003ns (0.243 - 0.246)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_BaudRateGenerator/counter_reg_7 to Inst_RxModule/b_reg_3
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X32Y71.DQ      Tcko                  0.408   Inst_BaudRateGenerator/counter_reg<7>
-                                                       Inst_BaudRateGenerator/counter_reg_7
-    SLICE_X37Y66.D3      net (fanout=19)       0.967   Inst_BaudRateGenerator/counter_reg<7>
-    SLICE_X37Y66.D       Tilo                  0.259   N61
-                                                       Inst_RxModule/Mmux_s_next411_SW9_G
-    SLICE_X36Y66.C2      net (fanout=1)        0.408   N61
-    SLICE_X36Y66.C       Tilo                  0.205   Inst_RxModule/b_reg<3>
-                                                       Inst_RxModule/Mmux_s_next411_SW91
-    SLICE_X36Y66.D5      net (fanout=1)        0.204   N34
-    SLICE_X36Y66.CLK     Tas                   0.341   Inst_RxModule/b_reg<3>
-                                                       Inst_RxModule/b_reg_3_rstpot
-                                                       Inst_RxModule/b_reg_3
-    -------------------------------------------------  ---------------------------
-    Total                                      2.792ns (1.213ns logic, 1.579ns route)
-                                                       (43.4% logic, 56.6% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     7.322ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_RxModule/b_reg_4 (FF)
-  Destination:          Inst_RxModule/b_reg_3 (FF)
-  Requirement:          10.000ns
-  Data Path Delay:      2.640ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.003ns (0.243 - 0.246)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_RxModule/b_reg_4 to Inst_RxModule/b_reg_3
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X35Y72.BQ      Tcko                  0.391   Inst_RxModule/b_reg<5>
-                                                       Inst_RxModule/b_reg_4
-    SLICE_X37Y66.D5      net (fanout=5)        0.832   Inst_RxModule/b_reg<4>
-    SLICE_X37Y66.D       Tilo                  0.259   N61
-                                                       Inst_RxModule/Mmux_s_next411_SW9_G
-    SLICE_X36Y66.C2      net (fanout=1)        0.408   N61
-    SLICE_X36Y66.C       Tilo                  0.205   Inst_RxModule/b_reg<3>
-                                                       Inst_RxModule/Mmux_s_next411_SW91
-    SLICE_X36Y66.D5      net (fanout=1)        0.204   N34
-    SLICE_X36Y66.CLK     Tas                   0.341   Inst_RxModule/b_reg<3>
-                                                       Inst_RxModule/b_reg_3_rstpot
-                                                       Inst_RxModule/b_reg_3
-    -------------------------------------------------  ---------------------------
-    Total                                      2.640ns (1.196ns logic, 1.444ns route)
-                                                       (45.3% logic, 54.7% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_RxModule/b_reg_0 (SLICE_X36Y67.B6), 8 paths
---------------------------------------------------------------------------------
-Slack (setup path):     6.817ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_BaudRateGenerator/counter_reg_9 (FF)
+Slack (setup path):     4.279ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_BaudRateGenerator/s_tick_reg (FF)
   Destination:          Inst_RxModule/b_reg_0 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      3.138ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.010ns (0.241 - 0.251)
+  Data Path Delay:      5.598ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.088ns (0.539 - 0.627)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -166,33 +52,30 @@ Slack (setup path):     6.817ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_BaudRateGenerator/counter_reg_9 to Inst_RxModule/b_reg_0
+  Maximum Data Path at Slow Process Corner: Inst_BaudRateGenerator/s_tick_reg to Inst_RxModule/b_reg_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X38Y74.CMUX    Tshcko                0.488   Inst_RxModule/s_reg<2>
-                                                       Inst_BaudRateGenerator/counter_reg_9
-    SLICE_X37Y67.D3      net (fanout=22)       1.160   Inst_BaudRateGenerator/counter_reg<9>
-    SLICE_X37Y67.D       Tilo                  0.259   Inst_BaudRateGenerator/counter_reg<8>
-                                                       Inst_RxModule/Mmux_s_next411_SW12_G
-    SLICE_X36Y67.A2      net (fanout=1)        0.567   N67
-    SLICE_X36Y67.A       Tilo                  0.205   Inst_RxModule/b_reg<1>
-                                                       Inst_RxModule/Mmux_s_next411_SW121
-    SLICE_X36Y67.B6      net (fanout=1)        0.118   N40
-    SLICE_X36Y67.CLK     Tas                   0.341   Inst_RxModule/b_reg<1>
+    SLICE_X29Y76.AQ      Tcko                  0.391   Inst_BaudRateGenerator/s_tick_reg
+                                                       Inst_BaudRateGenerator/s_tick_reg
+    SLICE_X38Y68.C4      net (fanout=6)        1.438   Inst_BaudRateGenerator/s_tick_reg
+    SLICE_X38Y68.C       Tilo                  0.204   Inst_RxModule/state_reg_FSM_FFd2
+                                                       Inst_RxModule/Mmux_s_next411
+    SLICE_X58Y39.A1      net (fanout=11)       3.224   Inst_RxModule/Mmux_s_next41
+    SLICE_X58Y39.CLK     Tas                   0.341   Inst_RxModule/b_reg<3>
                                                        Inst_RxModule/b_reg_0_rstpot
                                                        Inst_RxModule/b_reg_0
     -------------------------------------------------  ---------------------------
-    Total                                      3.138ns (1.293ns logic, 1.845ns route)
-                                                       (41.2% logic, 58.8% route)
+    Total                                      5.598ns (0.936ns logic, 4.662ns route)
+                                                       (16.7% logic, 83.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     7.421ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_RxModule/b_reg_0 (FF)
+Slack (setup path):     4.623ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_RxModule/s_reg_1 (FF)
   Destination:          Inst_RxModule/b_reg_0 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      2.544ns (Levels of Logic = 3)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      5.280ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.062ns (0.539 - 0.601)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -203,33 +86,30 @@ Slack (setup path):     7.421ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_RxModule/b_reg_0 to Inst_RxModule/b_reg_0
+  Maximum Data Path at Slow Process Corner: Inst_RxModule/s_reg_1 to Inst_RxModule/b_reg_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X36Y67.BQ      Tcko                  0.408   Inst_RxModule/b_reg<1>
-                                                       Inst_RxModule/b_reg_0
-    SLICE_X37Y67.D1      net (fanout=4)        0.646   Inst_RxModule/b_reg<0>
-    SLICE_X37Y67.D       Tilo                  0.259   Inst_BaudRateGenerator/counter_reg<8>
-                                                       Inst_RxModule/Mmux_s_next411_SW12_G
-    SLICE_X36Y67.A2      net (fanout=1)        0.567   N67
-    SLICE_X36Y67.A       Tilo                  0.205   Inst_RxModule/b_reg<1>
-                                                       Inst_RxModule/Mmux_s_next411_SW121
-    SLICE_X36Y67.B6      net (fanout=1)        0.118   N40
-    SLICE_X36Y67.CLK     Tas                   0.341   Inst_RxModule/b_reg<1>
+    SLICE_X38Y74.CQ      Tcko                  0.447   Inst_RxModule/s_reg<1>
+                                                       Inst_RxModule/s_reg_1
+    SLICE_X38Y68.C1      net (fanout=6)        1.064   Inst_RxModule/s_reg<1>
+    SLICE_X38Y68.C       Tilo                  0.204   Inst_RxModule/state_reg_FSM_FFd2
+                                                       Inst_RxModule/Mmux_s_next411
+    SLICE_X58Y39.A1      net (fanout=11)       3.224   Inst_RxModule/Mmux_s_next41
+    SLICE_X58Y39.CLK     Tas                   0.341   Inst_RxModule/b_reg<3>
                                                        Inst_RxModule/b_reg_0_rstpot
                                                        Inst_RxModule/b_reg_0
     -------------------------------------------------  ---------------------------
-    Total                                      2.544ns (1.213ns logic, 1.331ns route)
-                                                       (47.7% logic, 52.3% route)
+    Total                                      5.280ns (0.992ns logic, 4.288ns route)
+                                                       (18.8% logic, 81.2% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     7.422ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_RxModule/b_reg_1 (FF)
+Slack (setup path):     4.940ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_RxModule/s_reg_0 (FF)
   Destination:          Inst_RxModule/b_reg_0 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      2.543ns (Levels of Logic = 3)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      4.963ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.062ns (0.539 - 0.601)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -240,36 +120,67 @@ Slack (setup path):     7.422ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_RxModule/b_reg_1 to Inst_RxModule/b_reg_0
+  Maximum Data Path at Slow Process Corner: Inst_RxModule/s_reg_0 to Inst_RxModule/b_reg_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X36Y67.DQ      Tcko                  0.408   Inst_RxModule/b_reg<1>
+    SLICE_X38Y74.AQ      Tcko                  0.447   Inst_RxModule/s_reg<1>
+                                                       Inst_RxModule/s_reg_0
+    SLICE_X38Y68.C3      net (fanout=6)        0.747   Inst_RxModule/s_reg<0>
+    SLICE_X38Y68.C       Tilo                  0.204   Inst_RxModule/state_reg_FSM_FFd2
+                                                       Inst_RxModule/Mmux_s_next411
+    SLICE_X58Y39.A1      net (fanout=11)       3.224   Inst_RxModule/Mmux_s_next41
+    SLICE_X58Y39.CLK     Tas                   0.341   Inst_RxModule/b_reg<3>
+                                                       Inst_RxModule/b_reg_0_rstpot
+                                                       Inst_RxModule/b_reg_0
+    -------------------------------------------------  ---------------------------
+    Total                                      4.963ns (0.992ns logic, 3.971ns route)
+                                                       (20.0% logic, 80.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_RxModule/b_reg_1 (SLICE_X58Y39.B4), 4 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     4.452ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_BaudRateGenerator/s_tick_reg (FF)
+  Destination:          Inst_RxModule/b_reg_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.425ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.088ns (0.539 - 0.627)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Inst_BaudRateGenerator/s_tick_reg to Inst_RxModule/b_reg_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y76.AQ      Tcko                  0.391   Inst_BaudRateGenerator/s_tick_reg
+                                                       Inst_BaudRateGenerator/s_tick_reg
+    SLICE_X38Y68.C4      net (fanout=6)        1.438   Inst_BaudRateGenerator/s_tick_reg
+    SLICE_X38Y68.C       Tilo                  0.204   Inst_RxModule/state_reg_FSM_FFd2
+                                                       Inst_RxModule/Mmux_s_next411
+    SLICE_X58Y39.B4      net (fanout=11)       3.051   Inst_RxModule/Mmux_s_next41
+    SLICE_X58Y39.CLK     Tas                   0.341   Inst_RxModule/b_reg<3>
+                                                       Inst_RxModule/b_reg_1_rstpot
                                                        Inst_RxModule/b_reg_1
-    SLICE_X37Y67.D4      net (fanout=5)        0.645   Inst_RxModule/b_reg<1>
-    SLICE_X37Y67.D       Tilo                  0.259   Inst_BaudRateGenerator/counter_reg<8>
-                                                       Inst_RxModule/Mmux_s_next411_SW12_G
-    SLICE_X36Y67.A2      net (fanout=1)        0.567   N67
-    SLICE_X36Y67.A       Tilo                  0.205   Inst_RxModule/b_reg<1>
-                                                       Inst_RxModule/Mmux_s_next411_SW121
-    SLICE_X36Y67.B6      net (fanout=1)        0.118   N40
-    SLICE_X36Y67.CLK     Tas                   0.341   Inst_RxModule/b_reg<1>
-                                                       Inst_RxModule/b_reg_0_rstpot
-                                                       Inst_RxModule/b_reg_0
     -------------------------------------------------  ---------------------------
-    Total                                      2.543ns (1.213ns logic, 1.330ns route)
-                                                       (47.7% logic, 52.3% route)
+    Total                                      5.425ns (0.936ns logic, 4.489ns route)
+                                                       (17.3% logic, 82.7% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point Inst_RxModule/b_reg_7 (SLICE_X40Y66.D5), 7 paths
---------------------------------------------------------------------------------
-Slack (setup path):     6.882ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_BaudRateGenerator/counter_reg_6 (FF)
-  Destination:          Inst_RxModule/b_reg_7 (FF)
+Slack (setup path):     4.796ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_RxModule/s_reg_1 (FF)
+  Destination:          Inst_RxModule/b_reg_1 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      3.070ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.013ns (0.242 - 0.255)
+  Data Path Delay:      5.107ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.062ns (0.539 - 0.601)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -280,33 +191,30 @@ Slack (setup path):     6.882ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_BaudRateGenerator/counter_reg_6 to Inst_RxModule/b_reg_7
+  Maximum Data Path at Slow Process Corner: Inst_RxModule/s_reg_1 to Inst_RxModule/b_reg_1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X37Y67.AMUX    Tshcko                0.461   Inst_BaudRateGenerator/counter_reg<8>
-                                                       Inst_BaudRateGenerator/counter_reg_6
-    SLICE_X41Y66.D1      net (fanout=19)       1.192   Inst_BaudRateGenerator/counter_reg<6>
-    SLICE_X41Y66.D       Tilo                  0.259   N53
-                                                       Inst_RxModule/Mmux_s_next411_SW5_G
-    SLICE_X40Y66.C2      net (fanout=1)        0.408   N53
-    SLICE_X40Y66.C       Tilo                  0.205   Inst_RxModule/b_reg<7>
-                                                       Inst_RxModule/Mmux_s_next411_SW51
-    SLICE_X40Y66.D5      net (fanout=1)        0.204   N26
-    SLICE_X40Y66.CLK     Tas                   0.341   Inst_RxModule/b_reg<7>
-                                                       Inst_RxModule/b_reg_7_rstpot
-                                                       Inst_RxModule/b_reg_7
+    SLICE_X38Y74.CQ      Tcko                  0.447   Inst_RxModule/s_reg<1>
+                                                       Inst_RxModule/s_reg_1
+    SLICE_X38Y68.C1      net (fanout=6)        1.064   Inst_RxModule/s_reg<1>
+    SLICE_X38Y68.C       Tilo                  0.204   Inst_RxModule/state_reg_FSM_FFd2
+                                                       Inst_RxModule/Mmux_s_next411
+    SLICE_X58Y39.B4      net (fanout=11)       3.051   Inst_RxModule/Mmux_s_next41
+    SLICE_X58Y39.CLK     Tas                   0.341   Inst_RxModule/b_reg<3>
+                                                       Inst_RxModule/b_reg_1_rstpot
+                                                       Inst_RxModule/b_reg_1
     -------------------------------------------------  ---------------------------
-    Total                                      3.070ns (1.266ns logic, 1.804ns route)
-                                                       (41.2% logic, 58.8% route)
+    Total                                      5.107ns (0.992ns logic, 4.115ns route)
+                                                       (19.4% logic, 80.6% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     7.119ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_BaudRateGenerator/counter_reg_9 (FF)
-  Destination:          Inst_RxModule/b_reg_7 (FF)
+Slack (setup path):     5.113ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_RxModule/s_reg_0 (FF)
+  Destination:          Inst_RxModule/b_reg_1 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      2.837ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.009ns (0.242 - 0.251)
+  Data Path Delay:      4.790ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.062ns (0.539 - 0.601)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -317,33 +225,33 @@ Slack (setup path):     7.119ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_BaudRateGenerator/counter_reg_9 to Inst_RxModule/b_reg_7
+  Maximum Data Path at Slow Process Corner: Inst_RxModule/s_reg_0 to Inst_RxModule/b_reg_1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X38Y74.CMUX    Tshcko                0.488   Inst_RxModule/s_reg<2>
-                                                       Inst_BaudRateGenerator/counter_reg_9
-    SLICE_X41Y66.D4      net (fanout=22)       0.932   Inst_BaudRateGenerator/counter_reg<9>
-    SLICE_X41Y66.D       Tilo                  0.259   N53
-                                                       Inst_RxModule/Mmux_s_next411_SW5_G
-    SLICE_X40Y66.C2      net (fanout=1)        0.408   N53
-    SLICE_X40Y66.C       Tilo                  0.205   Inst_RxModule/b_reg<7>
-                                                       Inst_RxModule/Mmux_s_next411_SW51
-    SLICE_X40Y66.D5      net (fanout=1)        0.204   N26
-    SLICE_X40Y66.CLK     Tas                   0.341   Inst_RxModule/b_reg<7>
-                                                       Inst_RxModule/b_reg_7_rstpot
-                                                       Inst_RxModule/b_reg_7
+    SLICE_X38Y74.AQ      Tcko                  0.447   Inst_RxModule/s_reg<1>
+                                                       Inst_RxModule/s_reg_0
+    SLICE_X38Y68.C3      net (fanout=6)        0.747   Inst_RxModule/s_reg<0>
+    SLICE_X38Y68.C       Tilo                  0.204   Inst_RxModule/state_reg_FSM_FFd2
+                                                       Inst_RxModule/Mmux_s_next411
+    SLICE_X58Y39.B4      net (fanout=11)       3.051   Inst_RxModule/Mmux_s_next41
+    SLICE_X58Y39.CLK     Tas                   0.341   Inst_RxModule/b_reg<3>
+                                                       Inst_RxModule/b_reg_1_rstpot
+                                                       Inst_RxModule/b_reg_1
     -------------------------------------------------  ---------------------------
-    Total                                      2.837ns (1.293ns logic, 1.544ns route)
-                                                       (45.6% logic, 54.4% route)
+    Total                                      4.790ns (0.992ns logic, 3.798ns route)
+                                                       (20.7% logic, 79.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     7.327ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_BaudRateGenerator/counter_reg_7 (FF)
-  Destination:          Inst_RxModule/b_reg_7 (FF)
+
+Paths for end point Inst_RxModule/b_reg_3 (SLICE_X58Y39.D5), 4 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     4.526ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_BaudRateGenerator/s_tick_reg (FF)
+  Destination:          Inst_RxModule/b_reg_3 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      2.634ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.004ns (0.242 - 0.246)
+  Data Path Delay:      5.351ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.088ns (0.539 - 0.627)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -354,36 +262,129 @@ Slack (setup path):     7.327ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_BaudRateGenerator/counter_reg_7 to Inst_RxModule/b_reg_7
+  Maximum Data Path at Slow Process Corner: Inst_BaudRateGenerator/s_tick_reg to Inst_RxModule/b_reg_3
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X32Y71.DQ      Tcko                  0.408   Inst_BaudRateGenerator/counter_reg<7>
-                                                       Inst_BaudRateGenerator/counter_reg_7
-    SLICE_X41Y66.D6      net (fanout=19)       0.809   Inst_BaudRateGenerator/counter_reg<7>
-    SLICE_X41Y66.D       Tilo                  0.259   N53
-                                                       Inst_RxModule/Mmux_s_next411_SW5_G
-    SLICE_X40Y66.C2      net (fanout=1)        0.408   N53
-    SLICE_X40Y66.C       Tilo                  0.205   Inst_RxModule/b_reg<7>
-                                                       Inst_RxModule/Mmux_s_next411_SW51
-    SLICE_X40Y66.D5      net (fanout=1)        0.204   N26
-    SLICE_X40Y66.CLK     Tas                   0.341   Inst_RxModule/b_reg<7>
-                                                       Inst_RxModule/b_reg_7_rstpot
-                                                       Inst_RxModule/b_reg_7
+    SLICE_X29Y76.AQ      Tcko                  0.391   Inst_BaudRateGenerator/s_tick_reg
+                                                       Inst_BaudRateGenerator/s_tick_reg
+    SLICE_X38Y68.C4      net (fanout=6)        1.438   Inst_BaudRateGenerator/s_tick_reg
+    SLICE_X38Y68.C       Tilo                  0.204   Inst_RxModule/state_reg_FSM_FFd2
+                                                       Inst_RxModule/Mmux_s_next411
+    SLICE_X58Y39.D5      net (fanout=11)       2.977   Inst_RxModule/Mmux_s_next41
+    SLICE_X58Y39.CLK     Tas                   0.341   Inst_RxModule/b_reg<3>
+                                                       Inst_RxModule/b_reg_3_rstpot
+                                                       Inst_RxModule/b_reg_3
     -------------------------------------------------  ---------------------------
-    Total                                      2.634ns (1.213ns logic, 1.421ns route)
-                                                       (46.1% logic, 53.9% route)
+    Total                                      5.351ns (0.936ns logic, 4.415ns route)
+                                                       (17.5% logic, 82.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.870ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_RxModule/s_reg_1 (FF)
+  Destination:          Inst_RxModule/b_reg_3 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.033ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.062ns (0.539 - 0.601)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Inst_RxModule/s_reg_1 to Inst_RxModule/b_reg_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X38Y74.CQ      Tcko                  0.447   Inst_RxModule/s_reg<1>
+                                                       Inst_RxModule/s_reg_1
+    SLICE_X38Y68.C1      net (fanout=6)        1.064   Inst_RxModule/s_reg<1>
+    SLICE_X38Y68.C       Tilo                  0.204   Inst_RxModule/state_reg_FSM_FFd2
+                                                       Inst_RxModule/Mmux_s_next411
+    SLICE_X58Y39.D5      net (fanout=11)       2.977   Inst_RxModule/Mmux_s_next41
+    SLICE_X58Y39.CLK     Tas                   0.341   Inst_RxModule/b_reg<3>
+                                                       Inst_RxModule/b_reg_3_rstpot
+                                                       Inst_RxModule/b_reg_3
+    -------------------------------------------------  ---------------------------
+    Total                                      5.033ns (0.992ns logic, 4.041ns route)
+                                                       (19.7% logic, 80.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     5.187ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_RxModule/s_reg_0 (FF)
+  Destination:          Inst_RxModule/b_reg_3 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.716ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.062ns (0.539 - 0.601)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Inst_RxModule/s_reg_0 to Inst_RxModule/b_reg_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X38Y74.AQ      Tcko                  0.447   Inst_RxModule/s_reg<1>
+                                                       Inst_RxModule/s_reg_0
+    SLICE_X38Y68.C3      net (fanout=6)        0.747   Inst_RxModule/s_reg<0>
+    SLICE_X38Y68.C       Tilo                  0.204   Inst_RxModule/state_reg_FSM_FFd2
+                                                       Inst_RxModule/Mmux_s_next411
+    SLICE_X58Y39.D5      net (fanout=11)       2.977   Inst_RxModule/Mmux_s_next41
+    SLICE_X58Y39.CLK     Tas                   0.341   Inst_RxModule/b_reg<3>
+                                                       Inst_RxModule/b_reg_3_rstpot
+                                                       Inst_RxModule/b_reg_3
+    -------------------------------------------------  ---------------------------
+    Total                                      4.716ns (0.992ns logic, 3.724ns route)
+                                                       (21.0% logic, 79.0% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: TS_clk = PERIOD TIMEGRP "clk" 100 MHz HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_RxModule/n_reg_0 (SLICE_X32Y73.A6), 1 path
+Paths for end point Inst_RxModule/b_reg_3 (SLICE_X58Y39.D6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.421ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_RxModule/b_reg_3 (FF)
+  Destination:          Inst_RxModule/b_reg_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.421ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Inst_RxModule/b_reg_3 to Inst_RxModule/b_reg_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X58Y39.DQ      Tcko                  0.200   Inst_RxModule/b_reg<3>
+                                                       Inst_RxModule/b_reg_3
+    SLICE_X58Y39.D6      net (fanout=3)        0.031   Inst_RxModule/b_reg<3>
+    SLICE_X58Y39.CLK     Tah         (-Th)    -0.190   Inst_RxModule/b_reg<3>
+                                                       Inst_RxModule/b_reg_3_rstpot
+                                                       Inst_RxModule/b_reg_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.421ns (0.390ns logic, 0.031ns route)
+                                                       (92.6% logic, 7.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_BaudRateGenerator/counter_reg_9 (SLICE_X28Y76.D6), 1 path
 --------------------------------------------------------------------------------
 Slack (hold path):      0.425ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_RxModule/n_reg_0 (FF)
-  Destination:          Inst_RxModule/n_reg_0 (FF)
+  Source:               Inst_BaudRateGenerator/counter_reg_9 (FF)
+  Destination:          Inst_BaudRateGenerator/counter_reg_9 (FF)
   Requirement:          0.000ns
   Data Path Delay:      0.425ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
@@ -391,75 +392,47 @@ Slack (hold path):      0.425ns (requirement - (clock path skew + uncertainty - 
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: Inst_RxModule/n_reg_0 to Inst_RxModule/n_reg_0
+  Minimum Data Path at Fast Process Corner: Inst_BaudRateGenerator/counter_reg_9 to Inst_BaudRateGenerator/counter_reg_9
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X32Y73.AQ      Tcko                  0.200   Inst_RxModule/n_reg<2>
-                                                       Inst_RxModule/n_reg_0
-    SLICE_X32Y73.A6      net (fanout=6)        0.035   Inst_RxModule/n_reg<0>
-    SLICE_X32Y73.CLK     Tah         (-Th)    -0.190   Inst_RxModule/n_reg<2>
-                                                       Inst_RxModule/n_reg_0_rstpot
-                                                       Inst_RxModule/n_reg_0
+    SLICE_X28Y76.DQ      Tcko                  0.200   Inst_BaudRateGenerator/counter_reg<9>
+                                                       Inst_BaudRateGenerator/counter_reg_9
+    SLICE_X28Y76.D6      net (fanout=5)        0.035   Inst_BaudRateGenerator/counter_reg<9>
+    SLICE_X28Y76.CLK     Tah         (-Th)    -0.190   Inst_BaudRateGenerator/counter_reg<9>
+                                                       Inst_BaudRateGenerator/Mmux_counter_next101
+                                                       Inst_BaudRateGenerator/counter_reg_9
     -------------------------------------------------  ---------------------------
     Total                                      0.425ns (0.390ns logic, 0.035ns route)
                                                        (91.8% logic, 8.2% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_RxModule/b_reg_1 (SLICE_X36Y67.D6), 1 path
+Paths for end point Inst_BaudRateGenerator/counter_reg_4 (SLICE_X27Y76.D6), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.433ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_RxModule/b_reg_1 (FF)
-  Destination:          Inst_RxModule/b_reg_1 (FF)
+Slack (hold path):      0.447ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_BaudRateGenerator/counter_reg_4 (FF)
+  Destination:          Inst_BaudRateGenerator/counter_reg_4 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.433ns (Levels of Logic = 1)
+  Data Path Delay:      0.447ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         clk_BUFGP rising at 10.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: Inst_RxModule/b_reg_1 to Inst_RxModule/b_reg_1
+  Minimum Data Path at Fast Process Corner: Inst_BaudRateGenerator/counter_reg_4 to Inst_BaudRateGenerator/counter_reg_4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X36Y67.DQ      Tcko                  0.200   Inst_RxModule/b_reg<1>
-                                                       Inst_RxModule/b_reg_1
-    SLICE_X36Y67.D6      net (fanout=5)        0.043   Inst_RxModule/b_reg<1>
-    SLICE_X36Y67.CLK     Tah         (-Th)    -0.190   Inst_RxModule/b_reg<1>
-                                                       Inst_RxModule/b_reg_1_rstpot
-                                                       Inst_RxModule/b_reg_1
+    SLICE_X27Y76.DQ      Tcko                  0.198   Inst_BaudRateGenerator/counter_reg<4>
+                                                       Inst_BaudRateGenerator/counter_reg_4
+    SLICE_X27Y76.D6      net (fanout=4)        0.034   Inst_BaudRateGenerator/counter_reg<4>
+    SLICE_X27Y76.CLK     Tah         (-Th)    -0.215   Inst_BaudRateGenerator/counter_reg<4>
+                                                       Inst_BaudRateGenerator/Mmux_counter_next51
+                                                       Inst_BaudRateGenerator/counter_reg_4
     -------------------------------------------------  ---------------------------
-    Total                                      0.433ns (0.390ns logic, 0.043ns route)
-                                                       (90.1% logic, 9.9% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_BaudRateGenerator/counter_reg_7 (SLICE_X32Y71.D6), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.434ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_BaudRateGenerator/counter_reg_7 (FF)
-  Destination:          Inst_BaudRateGenerator/counter_reg_7 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.434ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
-  Source Clock:         clk_BUFGP rising at 10.000ns
-  Destination Clock:    clk_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: Inst_BaudRateGenerator/counter_reg_7 to Inst_BaudRateGenerator/counter_reg_7
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X32Y71.DQ      Tcko                  0.200   Inst_BaudRateGenerator/counter_reg<7>
-                                                       Inst_BaudRateGenerator/counter_reg_7
-    SLICE_X32Y71.D6      net (fanout=19)       0.044   Inst_BaudRateGenerator/counter_reg<7>
-    SLICE_X32Y71.CLK     Tah         (-Th)    -0.190   Inst_BaudRateGenerator/counter_reg<7>
-                                                       Inst_BaudRateGenerator/Mmux_counter_next81
-                                                       Inst_BaudRateGenerator/counter_reg_7
-    -------------------------------------------------  ---------------------------
-    Total                                      0.434ns (0.390ns logic, 0.044ns route)
-                                                       (89.9% logic, 10.1% route)
+    Total                                      0.447ns (0.413ns logic, 0.034ns route)
+                                                       (92.4% logic, 7.6% route)
 
 --------------------------------------------------------------------------------
 
@@ -476,18 +449,18 @@ Slack: 8.270ns (period - min period limit)
 Slack: 9.570ns (period - min period limit)
   Period: 10.000ns
   Min period limit: 0.430ns (2325.581MHz) (Tcp)
-  Physical resource: Inst_BaudRateGenerator/counter_reg<7>/CLK
-  Logical resource: Inst_BaudRateGenerator/counter_reg_4/CK
-  Location pin: SLICE_X32Y71.CLK
+  Physical resource: Inst_BaudRateGenerator/counter_reg<9>/CLK
+  Logical resource: Inst_BaudRateGenerator/counter_reg_7/CK
+  Location pin: SLICE_X28Y76.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 Slack: 9.570ns (period - (min high pulse limit / (high pulse / period)))
   Period: 10.000ns
   High pulse: 5.000ns
   High pulse limit: 0.215ns (Trpw)
-  Physical resource: Inst_BaudRateGenerator/counter_reg<7>/SR
-  Logical resource: Inst_BaudRateGenerator/counter_reg_4/SR
-  Location pin: SLICE_X32Y71.SR
+  Physical resource: Inst_BaudRateGenerator/counter_reg<9>/SR
+  Logical resource: Inst_BaudRateGenerator/counter_reg_7/SR
+  Location pin: SLICE_X28Y76.SR
   Clock network: reset_IBUF
 --------------------------------------------------------------------------------
 
@@ -504,7 +477,7 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.188|         |         |         |
+clk            |    5.721|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -513,16 +486,16 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 440 paths, 0 nets, and 314 connections
+Constraints cover 235 paths, 0 nets, and 186 connections
 
 Design statistics:
-   Minimum period:   3.188ns{1}   (Maximum frequency: 313.676MHz)
+   Minimum period:   5.721ns{1}   (Maximum frequency: 174.795MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Fri Jun 27 18:21:35 2014 
+Analysis completed Tue Jul  1 12:32:13 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:

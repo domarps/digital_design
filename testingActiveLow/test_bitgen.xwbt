@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/rishav/logic/code_repository/testingActiveLow/test.ncd
+OUTFILE=/home/rishav/logic/code_repository/testingActiveLow/test.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=/home/rishav/logic/code_repository/testingActiveLow
+LICENSE=WebPack
+USER_INFO=210852430_0_0_226

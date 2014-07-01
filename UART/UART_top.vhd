@@ -34,7 +34,8 @@ entity UART_top is
            reset : in  STD_LOGIC;
            rx : in  STD_LOGIC;
            rx_done_tick : out  STD_LOGIC;
-           dout : out  STD_LOGIC_VECTOR (7 downto 0));
+           dout : out  STD_LOGIC_VECTOR (7 downto 0);
+			  stage: out STD_LOGIC_VECTOR (4 downto 0));
 
 end UART_top;
 
@@ -47,7 +48,8 @@ begin
 		rx => rx,
 		s_tick => s_tick,
 		rx_done_tick => rx_done_tick ,
-		dout => dout
+		dout => dout,
+		stage => stage
 	);
 
 	Inst_BaudRateGenerator: entity work.BaudRateGenerator(Behavioral) PORT MAP(
