@@ -58,7 +58,7 @@ begin
 			if ( reset = '1')  then
 					state_reg <= idle;
 					s_reg <= (others => '0');  -- counts the number of sampling ticks. Counts to 7 in START state,15 in DATA and 1 in STOP
-					n_reg <= (others => '0');   -- counts the number of data bits scanned in DATA state.
+					n_reg <= (others => '0');  -- counts the number of data bits scanned in DATA state.
 					b_reg <= (others => '0');
 					--stage <= "00001";
 				elsif (clk'event and clk = '1') then
@@ -89,6 +89,7 @@ begin
 				stage <= "00100";
 								if (s_tick = '1') then
 									 if s_reg = 7 then
+									 --if s_reg = 3 then
 												state_next <= data;
 												s_next <= (others => '0');
 												n_next <= (others => '0');
@@ -101,6 +102,7 @@ begin
 				stage <= "01000";
 								if (s_tick = '1') then
 									 if s_reg = 15 then
+									 --if s_reg = 7 then
 												s_next <= (others => '0');
 												b_next <= rx & b_reg(7 downto 1);
 													if (n_reg = (DBIT - 1 ))then

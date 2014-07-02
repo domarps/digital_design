@@ -1,0 +1,25 @@
+NET "reset" LOC = F5;
+NET "serial_out" LOC = B16;
+NET "dataToBeSent[0]" LOC = A10;
+NET "dataToBeSent[1]" LOC = D14;
+NET "dataToBeSent[2]" LOC = C14;
+NET "dataToBeSent[3]" LOC = P15;
+NET "dataToBeSent[4]" LOC = P12;
+NET "dataToBeSent[5]" LOC = R5;
+NET "dataToBeSent[6]" LOC = T5;
+NET "dataToBeSent[7]" LOC = E4;
+NET "send_data" LOC = F6;
+
+NET "state_led[0]" LOC = U18;
+NET "state_led[1]" LOC = M14;
+NET "state_led[2]" LOC = N14;
+NET "state_led[3]" LOC = L14;
+
+
+
+NET "clk" LOC = L15;
+
+#Created by Constraints Editor (xc6slx45-csg324-3) - 2014/06/27
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 100 MHz HIGH 50%;
+

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Wed Jul  2 11:34:46 2014
+# Process ID: 4522
+# Log file: /home/rishav/logic/code_repository/UART/planAhead_run_5/planAhead.log
+# Journal file: /home/rishav/logic/code_repository/UART/planAhead_run_5/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/rishav/logic/code_repository/UART/pa.fromNetlist.tcl

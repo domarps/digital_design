@@ -1,5 +1,4 @@
 
-
 NET "reset" LOC = F5;
 NET "rx" LOC = A16;
 NET "dout[0]" LOC = U18;
@@ -23,3 +22,4 @@ NET "clk" LOC = L15;
 #Created by Constraints Editor (xc6slx45-csg324-3) - 2014/06/27
 NET "clk" TNM_NET = clk;
 TIMESPEC TS_clk = PERIOD "clk" 100 MHz HIGH 50%;
+
