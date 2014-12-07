@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Fri Jul 18 19:15:27 2014
+# Process ID: 6939
+# Log file: /home/rishav/logic/code_repository/ethernetPortReader/planAhead_run_1/planAhead.log
+# Journal file: /home/rishav/logic/code_repository/ethernetPortReader/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/rishav/logic/code_repository/ethernetPortReader/pa.fromNetlist.tcl
+startgroup
+set_property package_pin AF11 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin G8 [get_ports fa_in]
+endgroup
+startgroup
+set_property package_pin E6 [get_ports fa_out]
+endgroup
+startgroup
+set_property package_pin V18 [get_ports reset]
+endgroup
+save_constraints

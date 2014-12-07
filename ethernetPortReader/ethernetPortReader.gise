@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="ethernetPortReader.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="ethernetChipscope.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ethernetChipscope.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ethernetChipscope.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ethernetChipscope.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="ethernetChipscope.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ethernetChipscope.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ethernetChipscope.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ethernetChipscope.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ethernetChipscope.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ethernetChipscope.xst"/>
+    <file xil_pn:fileType="FILE_BLIF" xil_pn:name="ethernetChipscope_cs.blc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="ethernetChipscope_cs.ngc"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ethernetChipscope_envsettings.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="ethernetChipscope_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="ethernetChipscope_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="ethernetChipscope_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ethernetChipscope_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ethernetChipscope_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ethernetChipscope_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1405689439" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1405689439">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1405689439" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3517163475975967330" xil_pn:start_ts="1405689439">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1405692041" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="2594882432379046033" xil_pn:start_ts="1405692041">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1405689439" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1405689439">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1405689439" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="7780094055155170656" xil_pn:start_ts="1405689439">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1405691085" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-563469029221826088" xil_pn:start_ts="1405691085">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1405692041" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="6878479795441796315" xil_pn:start_ts="1405692041">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1405695255" xil_pn:in_ck="-8522377872797954451" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-1828476623219828630" xil_pn:start_ts="1405695247">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="ethernetChipscope.lso"/>
+      <outfile xil_pn:name="ethernetChipscope.ngc"/>
+      <outfile xil_pn:name="ethernetChipscope.ngr"/>
+      <outfile xil_pn:name="ethernetChipscope.prj"/>
+      <outfile xil_pn:name="ethernetChipscope.stx"/>
+      <outfile xil_pn:name="ethernetChipscope.syr"/>
+      <outfile xil_pn:name="ethernetChipscope.xst"/>
+      <outfile xil_pn:name="ethernetChipscope_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1405695379" xil_pn:in_ck="-8522377872797955703" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4645144744793465237" xil_pn:start_ts="1405695379">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1405695391" xil_pn:in_ck="7940569149387943415" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3021242699723875228" xil_pn:start_ts="1405695379">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="ethernetChipscope.bld"/>
+      <outfile xil_pn:name="ethernetChipscope.ngd"/>
+      <outfile xil_pn:name="ethernetChipscope_cs.blc"/>
+      <outfile xil_pn:name="ethernetChipscope_cs.ngc"/>
+      <outfile xil_pn:name="ethernetChipscope_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1405695396" xil_pn:in_ck="3301935239570671693" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="346394261158932323" xil_pn:start_ts="1405695391">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="ethernetChipscope_map.map"/>
+      <outfile xil_pn:name="ethernetChipscope_map.mrp"/>
+      <outfile xil_pn:name="ethernetChipscope_map.ngm"/>
+    </transform>
+    <transform xil_pn:end_ts="1405691306" xil_pn:in_ck="3301935239570671693" xil_pn:name="TRAN_createTimingConstraints" xil_pn:start_ts="1405691303">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
+
+</generated_project>

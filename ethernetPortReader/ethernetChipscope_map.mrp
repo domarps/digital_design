@@ -1,0 +1,67 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'ethernetChipscope'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx150t-fgg676-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o ethernetChipscope_map.ncd ethernetChipscope.ngd
+ethernetChipscope.pcf 
+Target Device  : xc6slx150t
+Target Package : fgg676
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Fri Jul 18 20:26:33 2014
+
+Design Summary
+--------------
+Number of errors   :   1
+Number of warnings :   0
+
+Section 1 - Errors
+------------------
+ERROR:Pack:1107 - Pack was unable to combine the symbols listed below into a
+   single IOB component because the site type selected is not compatible. 
+
+   Further explanation:
+   The component type is determined by the types of logic and the properties and
+   configuration of the logic it contains. In this case an IO component of type
+   IOB was chosen because the IO contains symbols and/or properties consistent
+   with input, output, or bi-directional usage and contains no other symbols or
+   properties that require a more specific IO component type. Please double
+   check that the types of logic elements and all of their relevant properties
+   and configuration options are compatible with the physical site type of the
+   constraint.
+
+   Summary:
+   Symbols involved:
+   	BUF symbol "clk_instance" (Output Signal = clk)
+   	PAD symbol "clk_r" (Pad Signal = clk_r)
+   Component type involved: IOB
+   Site Location involved: AF11
+   Site Type involved: IPAD
+
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:56 - Part 'xc6slx150t' is not a WebPack part.
+INFO:Security:66 - Your license for 'ISE' is for evaluation use only.
+INFO:LIT:243 - Logical network icon_control0<35> has no load.
+INFO:LIT:395 - The above info message is repeated 22 more times for the
+   following (max. 5 shown):
+   icon_control0<34>,
+   icon_control0<33>,
+   icon_control0<32>,
+   icon_control0<31>,
+   icon_control0<30>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.

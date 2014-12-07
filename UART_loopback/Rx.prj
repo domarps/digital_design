@@ -1,0 +1,2 @@
+vhdl work "BaudRateGenerator.vhd"
+vhdl work "Rx.vhd"

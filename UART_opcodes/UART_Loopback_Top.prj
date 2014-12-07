@@ -1,0 +1,4 @@
+vhdl work "BaudRateGenerator.vhd"
+vhdl work "Tx.vhd"
+vhdl work "Rx.vhd"
+vhdl work "UART_Loopback_Top.vhd"

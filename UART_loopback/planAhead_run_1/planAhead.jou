@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Wed Jul  2 20:15:37 2014
+# Process ID: 6988
+# Log file: /home/rishav/logic/code_repository/UART_loopback/planAhead_run_1/planAhead.log
+# Journal file: /home/rishav/logic/code_repository/UART_loopback/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/rishav/logic/code_repository/UART_loopback/pa.fromNetlist.tcl
+startgroup
+set_property package_pin L15 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin F5 [get_ports reset]
+endgroup
+set_property package_pin "" [get_ports [list  serial_in]]
+startgroup
+set_property package_pin A16 [get_ports serial_in]
+endgroup
+startgroup
+set_property package_pin B16 [get_ports serial_out]
+endgroup
+save_constraints

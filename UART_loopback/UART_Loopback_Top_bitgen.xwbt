@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/rishav/logic/code_repository/UART_loopback/UART_Loopback_Top.ncd
+OUTFILE=/home/rishav/logic/code_repository/UART_loopback/UART_Loopback_Top.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=/home/rishav/logic/code_repository/UART_loopback
+LICENSE=WebPack
+USER_INFO=210852430_0_0_605

@@ -1,0 +1,13 @@
+
+# PlanAhead Generated physical constraints 
+#NET "clk_n" LOC = AF11;
+#NET "clk_p" LOC = AE11;
+NET "clk_r" LOC = AF11;
+NET "fa_in" LOC = H8;
+NET "fa_out" LOC = E6;
+NET "reset" LOC = V18;
+#Created by Constraints Editor (xc6slx150t-fgg676-2) - 2014/07/18
+#NET "clk_p" TNM_NET = clk_p;
+#TIMESPEC TS_clk = PERIOD "clk_p" 125 MHz HIGH 50%;
+NET "clk_r" TNM_NET = clk_r;
+#TIMESPEC TS_clk = PERIOD "clk_r" 125 MHz HIGH 50%;
